@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" /> 
+    <title>RGB Selector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <div class="container">
+        <h1>Choose your color</h1>
+
+        <div class="colors">
+            <div>
+                <p>Red (R)</p>
+                <input id="red" type="range" min=0 max=255 step=1 value=127 enabled />
+                <span><p id="red-value">127</p></span>
+            </div>
+            
+            <div>
+                <p>Green (G)</p>
+                <input id="green" type="range" min=0 max=255 step=1 value=127 enabled />
+                <span><p id="green-value">127</p></span>
+            </div>
+
+            <div>
+                <p>Blue (B)</p>
+                <input id="blue" type="range" min=0 max=255 step=1 value=127 enabled />
+                <span><p id="blue-value">127</p></span>
+            </div>
+        </div>
+
+        <div class="color-result">
+            <p><strong>Result</strong></p>
+        </div>
+    </div>    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
